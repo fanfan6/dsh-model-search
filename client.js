@@ -1,3 +1,11 @@
+/**
+ * @dsh-model-search — Client half.
+ *
+ * Registers a 🔍 search button in conversation.input.right (session-scoped).
+ * Opens a popup that fetches all models via the Host API and filters in real time.
+ * Selecting a model calls connection.api.sessions.selectModel to switch the
+ * current session's model immediately.
+ */
 window.__ModuleLoader__.load({
   id: 'dsh-model-search',
   factory: (require) => {
