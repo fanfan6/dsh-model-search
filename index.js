@@ -1,6 +1,10 @@
 /**
  * @dsh-model-search — Host half.
+ *
  * Provides HTTP API endpoints for model listing and switching.
+ * - GET  /model-search/api/models       → returns all models from all providers
+ * - POST /model-search/api/switch-model → saves the selected model as default
+ * - GET  /api/pet/*                     → silences 404 from @linxin666/dsh-pet
  */
 
 const API_PREFIX = "/model-search/api";
