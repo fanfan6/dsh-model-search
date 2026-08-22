@@ -10,6 +10,7 @@
 const API_PREFIX = "/model-search/api";
 
 export const name = "dsh-model-search";
+export const version = "1.0.0";
 
 export const inject = ["webServer", "settings", "agentDefaultModel"];
 
