@@ -23,14 +23,18 @@
     "prepublishOnly": "npm run check"
   },
   "keywords": [
-    "deepseek",
-    "harness",
     "dsh",
+    "deepseek-harness",
+    "deepseek",
     "plugin",
-    "model",
-    "search",
+    "model-search",
+    "model-selector",
+    "llm",
+    "chat",
+    "cordis",
     "filter",
-    "llm"
+    "cross-provider",
+    "search"
   ],
   "license": "MIT",
   "publishConfig": { "access": "public" },
