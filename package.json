@@ -1,0 +1,40 @@
+{
+  "name": "dsh-model-search",
+  "version": "1.0.0",
+  "description": "DSH 插件：为模型选择器添加跨平台搜索过滤功能，支持商汤、百炼等所有配置的模型源。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "README.md", "LICENSE"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "inject": ["@deepseek-ai/dsh-client-ui-slots"]
+    }
+  },
+  "scripts": {
+    "check": "node --check index.js && node --check client.js",
+    "prepublishOnly": "npm run check"
+  },
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "plugin",
+    "model",
+    "search",
+    "filter",
+    "llm"
+  ],
+  "license": "MIT",
+  "publishConfig": { "access": "public" },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  }
+}
