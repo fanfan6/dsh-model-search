@@ -10,7 +10,7 @@
     "./cordis.patch.yml": "./cordis.patch.yml",
     "./package.json": "./package.json"
   },
-  "files": ["index.js", "client.js", "cordis.patch.yml", "README.md", "LICENSE"],
+  "files": ["index.js", "client.js", "cordis.patch.yml", "README.md", "README_EN.md", "CHANGELOG.md", "LICENSE"],
   "dsh": {
     "bundle": { "patch": "./cordis.patch.yml" },
     "client": {
