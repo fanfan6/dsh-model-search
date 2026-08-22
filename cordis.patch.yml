@@ -1,3 +1,5 @@
+# dsh-model-search — Cordis plugin registration
+# Adds a searchable model selector to the DSH input bar.
 - insert:
     - id: dsh-model-search
       name: dsh-model-search
